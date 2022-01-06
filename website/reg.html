@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>
+Registration form </title>
+  <script>
+  function validate()
+  {
+  if(document.reg.fname.value.length=="")  
+        {
+        alert("please fill first name");
+        return false;
+        }
+        else if(document.reg.lname.value.length=="")  
+        {
+        alert("please fill last name");
+        return false;
+        }
+        else if(document.reg.email.value.length=="")  
+        {
+        alert("please fill email");
+        return false;
+        }
+      else if(document.reg.oname.value.length=="")  
+        {
+        alert("please fill Organization Name ");
+        return false;
+        }
+
+      else if(document.reg.mno.value.length=="")  
+        {
+        alert("please fill Your Mobile No. ");
+        return false;
+        }
+
+      else if(document.reg.id.value.length=="")  
+        {
+        alert("please fill Your Student Id ");
+        return false;
+        }
+        
+        }
+</script>
+<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+<center>
+<div class="login_box">
+<form name="reg" action="reg.php" onsubmit="return validate()" method="POST">
+<h1><b>REGISTRATION</b></h1>
+<h2><b>
+First name:-<br>
+</h2></b>
+<input type="text" name="fname" placeholder="Enter First name">
+<br>
+<h2><b>
+Last name:-<br>
+</h2></b>
+<input type="text" name="lname" placeholder="Enter Last name">
+<br>
+<h2><b>
+Email:-<br></h2></b>
+<input type="email" name="email" placeholder="Email Address">
+<br>
+<h2><b>
+No. of Year of Experience:-<br></h2></b>
+<input type="text" name="oname" placeholder="Enter Experience Years">
+<br>
+<h2><b>
+Mobile no.:-<br></h2></b>
+<input type="text" name="mno" placeholder="Enter Mobile number">
+<br>
+<h2><b>
+Student id:-
+<br></h2></b>
+<input type="text" name="id" placeholder="Enter Student Id">
+<br>
+<br/>
+
+    <input type="submit" name="submit" value="Submit">
+<br>
+</div></center>
+</form>
+</body>
+</html>
